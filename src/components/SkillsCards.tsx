@@ -1,7 +1,14 @@
 import React from 'react';
 import { SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiNodedotjs, SiRedux } from 'react-icons/si';
 
-const Skill = ({ Icon, name, category,color }: { Icon: any, name: string, category: string,color:string }) => (
+
+interface SkillProps {
+  Icon: React.ComponentType<{ className?: string }>;
+  name: string
+  category: string
+  color: string
+}
+const Skill: React.FC<SkillProps> = ({ Icon, name, category,color }) => (
   <div className="p-4 rounded-lg  shadow-lg md:hover:shadow-purple-500/50 transition-all duration-300 flex flex-col items-center justify-center gap-2 md:border-none border border-gray-600">
     <Icon className={`text-4xl md:text-5xl   ${color}`} />
     <span className="text-white font-semibobold">{name}</span>
