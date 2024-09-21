@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 import About from '@/components/Routes/About';
 import Projects from '@/components/Routes/Projects';
 import Home from '@/components/Routes/Home';
-import FooterCard from '@/components/Footer';
 
 type Page = 'home' | 'projects' | 'about';
 

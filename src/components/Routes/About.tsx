@@ -20,26 +20,26 @@ export default function About() {
             src={abtme}
             width={325}
             height={325}
-            alt="Tauhid's profile picture"
+            alt="Tauhids profile picture"
             className="rounded-lg"
           />
         </div>
         <div className="w-full md:w-2/3">
           <div className="space-y-4">
             <p className="text-2xl md:text-3xl">
-              Hello, I'm{' '}
+              Hello, I&apos;m{" "}
               <Link href="https://x.com/tauhid_khan476" className="text-purple-600 font-bold">
                 Tauhid
-              </Link>{' '}
+              </Link>{" "}
               👋
             </p>
             <p className="text-lg">
-              I'm a second-year Computer Engineering student in Mumbai, Maharashtra and a self-taught developer. My interest in software engineering started when one of my friends introduced me to programming.
+              I&apos;m a second-year Computer Engineering student in Mumbai, Maharashtra and a self-taught developer. My interest in software engineering started when one of my friends introduced me to programming.
             </p>
             <p className="text-lg">
               I enjoy coding, learning new technologies, and building projects.
               <br />
-              (I use Windows btw😅). I'm also looking to participate in hackathons and explore new opportunities to grow as a developer.
+              (I use Windows btw😅). I&apos;m also looking to participate in hackathons and explore new opportunities to grow as a developer.
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function About() {
       {/* Connect with me Section*/}
 
       <div className="connects mt-7 flex flex-col">
-        <p className='text-2xl md:text-3xl'>Connect with me:</p>
+        <p className="text-2xl md:text-3xl">Connect with me:</p>
         <div className="links flex mt-6 gap-x-4 h-auto md:gap-x-7">
           <Link href="https://github.com/tauhid-476">
             <GitHubLogoIcon className="md:h-9 md:w-9 h-7 w-7" />

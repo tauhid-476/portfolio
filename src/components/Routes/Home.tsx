@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { MailIcon, ChevronRight, MailPlusIcon } from "lucide-react";
 import React from "react";
 import TypingAnimation from "@/components/TypingAnimation";
@@ -41,13 +41,13 @@ const Home = () => {
       {/* introTexts */}
       <div className="flex flex-col gap-y-3">
         <p className="text-2xl text-gray-500">Hey There👋 </p>
-        <p className="text-4xl font-bold md:text-5xl">I'm Tauhid</p>
+        <p className="text-4xl font-bold md:text-5xl">I&apos;m Tauhid</p>
         <p className="font-bold lg:text-3xl text-xl md:text-4xl">
           {" "}
           I <TypingAnimation />
         </p>
         <p className="text-lg md:text-2xl">
-          I'm eager to build more{" "}
+          I&apos;m eager to build more{" "}
           <span className="text-purple-600 font-bold">FULL-STACK </span>projects
           and explore new opportunities.
         </p>
@@ -108,7 +108,7 @@ const Home = () => {
       {/* Contact Me */}
       <div className="flex flex-col justify-center items-center mt-16 md:mt-24 text-center">
         <div className="mt-4 md:text-xl text-lg">
-          I'm super active on{" "}
+          I&apos;m super active on{" "}
           <Link href="https://x.com/tauhid_khan476">
             <span className="text-purple-600 font-bold">X</span>
           </Link>{" "}
