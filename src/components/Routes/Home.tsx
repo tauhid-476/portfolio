@@ -3,8 +3,8 @@ import { MailIcon, ChevronRight, MailPlusIcon } from "lucide-react";
 import React from "react";
 import TypingAnimation from "@/components/TypingAnimation";
 import Link from "next/link";
-import SkillsShowcase from "../SkillsCards";
-import ProjectsCard from "../ProjectsCard";
+import SkillsShowcase from "../Cards/SkillsCards";
+import ProjectsCard from "../Cards/ProjectsCard";
 import Xlogo from "@/assets/x-logo-full.png";
 import Image from "next/image";
 import feedzup from "@/assets/feedzup.jpeg";
@@ -22,7 +22,7 @@ const Home = () => {
       projectIcon: feedzup,
       title: "Feedz Up",
       description:
-        "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
+        "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous and share there thoughts. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
       githubLink: "https://github.com/tauhid-476/ama-next/tree/main",
       liveLink: "https://ama-next.vercel.app/",
     },

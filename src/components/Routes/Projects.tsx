@@ -4,7 +4,7 @@ import feedzup from "@/assets/feedzup.jpeg";
 import socialSizer from "@/assets/ss.png";
 import blog from "@/assets/blog.png";
 import youtube from "@/assets/youtube.png";
-import ProjectsCard from '../ProjectsCard';
+import ProjectsCard from '../Cards/ProjectsCard';
 import FooterCard from '../Footer';
 
 
@@ -14,7 +14,7 @@ const Projects = () => {
       projectIcon: feedzup,
       title: "Feedz Up",
       description:
-        "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
+        "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous and share there thoughts. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
       githubLink: "https://github.com/tauhid-476/ama-next/tree/main",
       liveLink: "https://ama-next.vercel.app/",
     },
@@ -38,7 +38,7 @@ const Projects = () => {
       projectIcon: youtube,
       title: "Youtube Backend",
       description:"Youtube backend is a backend service for youtube built with Node.js and Express. File uploading for videos and thumnbail are managed by cloudinary.",
-      githubLink: "https://github.com/tauhid-476/social-sizer"
+      githubLink: "https://github.com/tauhid-476/Backend-learning-"
     },
   ];
 
