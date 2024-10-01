@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage, setDirecti
           
         />
      
-      <h1 className="text-3xl md:text-5xl font-bold px-4">Tauhid /</h1>
+      <h1 className="text-3xl md:text-5xl font-bold px-4 md:pb-2">Tauhid /</h1>
       
         <GlowingButton 
           onClick={() => navigate('about', 1)} 

@@ -87,7 +87,7 @@ const Home = () => {
           ~PROJECTS~
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-8 md:px-4">
           {homePageProjects.map((project, index) => (
             <ProjectsCard key={index} {...project} />
           ))}

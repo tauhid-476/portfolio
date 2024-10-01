@@ -14,7 +14,7 @@ interface ProjectsProps {
 
 const ProjectsCard = ({ projectIcon, title, description, githubLink, liveLink }: ProjectsProps) => {
   return (
-    <div className="border border-gray-600 p-4 rounded-lg shadow-lg  grid grid-cols-3 gap-4 md:w-[30vw]">
+    <div className="border border-gray-600 p-4 rounded-lg shadow-lg  flex flex-col h-full">
       {/* Left Section */}
       <div className="col-span-3 flex justify-between items-center mb-2">
         {/* Project Icon and Title */}
