@@ -4,7 +4,9 @@ import feedzup from "@/assets/feedzup.jpeg";
 import socialSizer from "@/assets/ss.png";
 import blog from "@/assets/blog.png";
 import youtube from "@/assets/youtube.png";
+import xAnime from "@/assets/x-anime.jpg";
 import ProjectsCard from '../Cards/ProjectsCard';
+import gix from "@/assets/gix.png"
 import FooterCard from '../Footer';
 
 
@@ -39,6 +41,19 @@ const Projects = () => {
       title: "Youtube Backend",
       description:"Youtube backend is a backend service for youtube built with Node.js and Express. File uploading for videos and thumnbail are managed by cloudinary.",
       githubLink: "https://github.com/tauhid-476/Backend-learning-"
+    },
+    {
+      projectIcon: xAnime,
+      title: "X Anime",
+      description: "A fun and engaging tool where you can discover what your favorite anime character thinks about you based on insights from your Twitter profile. Experience a blend of anime magic and social media!",
+      githubLink: "https://github.com/tauhid-476/anime-tw",
+      liveLink: "https://x-anime-pink.vercel.app/",
+    },
+    {
+      projectIcon: gix,
+      title: "Gix-Gain",
+      description: "A robust backend solution crafted for freelancing platforms. Users can seamlessly post and apply for gigs while receiving automated rejection or hiring emails via Nodemailer. Built with PostgreSQL, Prisma ORM, and NextAuth for secure authentication.",
+      githubLink: "https://github.com/tauhid-476/freelance-platform",
     },
   ];
 
