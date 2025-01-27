@@ -8,10 +8,20 @@ import xAnime from "@/assets/x-anime.jpg";
 import ProjectsCard from '../Cards/ProjectsCard';
 import gix from "@/assets/gix.png"
 import FooterCard from '../Footer';
-
+import snapcart from "@/assets/snapcart.png"
+import chatty from "@/assets/chatty.png"
 
 const Projects = () => {
   const projects = [
+    {
+      projectIcon: snapcart,
+      title: "Snap Cart",
+      description:
+        "SnapCart is a full-stack e-commerce platform built with Next.js, offering seamless user authentication via NextAuth. It features real-time file uploads powered by ImageKit and secure payment processing with Razorpay. The app is backed by MongoDB for robust data management and styled with DaisyUI for a modern and intuitive interface.",
+      githubLink: "https://github.com/tauhid-476/imaegkit-ecomm",
+      liveLink: "https://imaegkit-ecomm.vercel.app/",
+    },
+    
     {
       projectIcon: feedzup,
       title: "Feedz Up",
@@ -19,6 +29,14 @@ const Projects = () => {
         "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous and share there thoughts. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
       githubLink: "https://github.com/tauhid-476/ama-next/tree/main",
       liveLink: "https://ama-next.vercel.app/",
+    },
+    {
+      projectIcon: chatty,
+      title: "Chat More",
+      description:
+        "ChatMore is a full-stack MERN project designed to explore and implement WebSocket functionality. It features custom authentication, Cloudinary for backend file handling, and state management with Zustand. Styled with DaisyUI, the app offers a clean interface with 32 customizable themes for a personalized user experience.",
+      githubLink: "https://github.com/tauhid-476/chat-app",
+      liveLink: "https://chat-app-ryd5.onrender.com/",
     },
     {
       projectIcon: socialSizer,
@@ -73,7 +91,6 @@ const Projects = () => {
         ))}
       </div>
       <p className='md:text-center md:text-3xl text-2xl'>More to come...</p>
-
       <FooterCard />
     </div>
   );
