@@ -86,8 +86,8 @@ const Projects = () => {
       "projectIcon": scoreMore,
       "title": "Score More",
       "description": "Score More is an AI-powered platform designed to help students excel in their semester exams. It utilizes Gemini AI to analyze uploaded PDFs, categorize questions based on repetition, and generate solutions for effective preparation. The platform is built with a sleek and modern UI using ShadCN, ensuring a seamless and intuitive user experience.",
-      "githubLink": "https://github.com/your-github/Score-More",
-      "liveLink": "https://score-more.vercel.app/"
+      "githubLink": "https://github.com/tauhid-476/score-more",
+      "liveLink": "https://score-more-seven.vercel.app/"
     },
     {
       projectIcon: youtube,
