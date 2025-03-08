@@ -115,7 +115,7 @@ export default function About() {
       >
         <p className="text-xl font-semibold md:text-2xl">
           I am currently looking for freelance opportunities to expand my experience and work on exciting projects.
-          If you have any ideas or collaborations in mind, let's connect! I'm eager to meet new people and build amazing projects together.
+          If you have any ideas or collaborations in mind, let&apos;s connect! I&apos;m eager to meet new people and build amazing projects together.
         </p>
       </motion.div>
 
