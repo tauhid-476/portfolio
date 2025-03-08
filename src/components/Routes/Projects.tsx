@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"; // Import framer-motion
 
 import feedzup from "@/assets/feedzup.jpeg";
 import socialSizer from "@/assets/ss.png";
@@ -6,12 +7,33 @@ import blog from "@/assets/blog.png";
 import youtube from "@/assets/youtube.png";
 import xAnime from "@/assets/x-anime.jpg";
 import ProjectsCard from '../Cards/ProjectsCard';
-import gix from "@/assets/gix.png"
 import FooterCard from '../Footer';
 import snapcart from "@/assets/snapcart.png"
 import chatty from "@/assets/chatty.png"
+import startupHub from "@/assets/startuphub.png"
+import scoreMore from "@/assets/score-more.jpg"
 
 const Projects = () => {
+  // Animation variants for staggered card animations
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4 }
+    }
+  };
+
   const projects = [
     {
       projectIcon: snapcart,
@@ -21,7 +43,6 @@ const Projects = () => {
       githubLink: "https://github.com/tauhid-476/imaegkit-ecomm",
       liveLink: "https://imaegkit-ecomm.vercel.app/",
     },
-    
     {
       projectIcon: feedzup,
       title: "Feedz Up",
@@ -39,6 +60,13 @@ const Projects = () => {
       liveLink: "https://chat-app-ryd5.onrender.com/",
     },
     {
+      projectIcon: startupHub,
+      title: "Startup-Hub",
+      description: "Startup Hub is a full-stack platform built with Next.js, PostgreSQL, and NextAuth for authentication. It allows users to register as either candidates or founders, enabling seamless hiring and collaboration. The platform features automatic email notifications for hiring and acceptance updates. ImageKit is used for efficient image uploading, and the entire project is developed with TypeScript for a robust and scalable codebase. 🚀",
+      githubLink: "https://github.com/tauhid-476/startup",
+      liveLink: "https://startup-link-unvieled.vercel.app/",
+    },
+    {
       projectIcon: socialSizer,
       title: "Social Sizer",
       description:
@@ -50,14 +78,21 @@ const Projects = () => {
       projectIcon: blog,
       title: "Write Space",
       description:
-          "Write Space is a lightweight blog app built with React and styled using DaisyUI. It utilizes Appwrite for backend services, providing a simple platform for users to share their thoughts and ideas.",
+        "Write Space is a lightweight blog app built with React and styled using DaisyUI. It utilizes Appwrite for backend services, providing a simple platform for users to share their thoughts and ideas.",
       githubLink: "https://github.com/tauhid-476/Blog-App",
       liveLink: "https://blog-app-khaki-sigma.vercel.app/",
-    },   
+    },
+    {
+      "projectIcon": scoreMore,
+      "title": "Score More",
+      "description": "Score More is an AI-powered platform designed to help students excel in their semester exams. It utilizes Gemini AI to analyze uploaded PDFs, categorize questions based on repetition, and generate solutions for effective preparation. The platform is built with a sleek and modern UI using ShadCN, ensuring a seamless and intuitive user experience.",
+      "githubLink": "https://github.com/your-github/Score-More",
+      "liveLink": "https://score-more.vercel.app/"
+    },
     {
       projectIcon: youtube,
       title: "Youtube Backend",
-      description:"Youtube backend is a backend service for youtube built with Node.js and Express. File uploading for videos and thumnbail are managed by cloudinary.",
+      description: "Youtube backend is a backend service for youtube built with Node.js and Express. File uploading for videos and thumnbail are managed by cloudinary.",
       githubLink: "https://github.com/tauhid-476/Backend-learning-"
     },
     {
@@ -66,31 +101,55 @@ const Projects = () => {
       description: "A fun and engaging tool where you can discover what your favorite anime character thinks about you based on insights from your Twitter profile. Experience a blend of anime magic and social media!",
       githubLink: "https://github.com/tauhid-476/anime-tw",
       liveLink: "https://x-anime-pink.vercel.app/",
-    },
-    {
-      projectIcon: gix,
-      title: "Gix-Gain",
-      description: "A robust backend solution crafted for freelancing platforms. Users can seamlessly post and apply for gigs while receiving automated rejection or hiring emails via Nodemailer. Built with PostgreSQL, Prisma ORM, and NextAuth for secure authentication.",
-      githubLink: "https://github.com/tauhid-476/freelance-platform",
-    },
+    }
   ];
-
 
   return (
     <div className="flex flex-col gap-y-5">
-      <p className="text-3xl md:text-5xl font-bold underline decoration-wavy decoration-purple-600 md:text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <p className="text-3xl md:text-5xl font-bold underline decoration-wavy decoration-purple-600 md:text-center">
           ~PROJECTS~
         </p>
-      <p className='text-2xl md:text-3xl md:text-center'>
-        Here are some of my recent projects
-      </p>
+      </motion.div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-y-5">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <p className='text-2xl md:text-3xl md:text-center'>
+          Here are some of my recent projects
+        </p>
+      </motion.div>
+
+      <motion.div 
+        className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-y-5"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {projects.map((project, index) => (
-          <ProjectsCard key={index} {...project} />
+          <motion.div key={index} variants={itemVariants}>
+            <ProjectsCard {...project} />
+          </motion.div>
         ))}
-      </div>
-      <p className='md:text-center md:text-3xl text-2xl'>More to come...</p>
+      </motion.div>
+      
+      <motion.p 
+        className='md:text-center md:text-3xl text-2xl'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        viewport={{ once: true }}
+      >
+        More to come...
+      </motion.p>
+      
       <FooterCard />
     </div>
   );
