@@ -12,6 +12,7 @@ import snapcart from "@/assets/snapcart.png"
 import chatty from "@/assets/chatty.png"
 import startupHub from "@/assets/startuphub.png"
 import scoreMore from "@/assets/score-more.jpg"
+import introHaven from "@/assets/introhaven.png"
 
 const Projects = () => {
   // Animation variants for staggered card animations
@@ -47,7 +48,7 @@ const Projects = () => {
       projectIcon: feedzup,
       title: "Feedz Up",
       description:
-        "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous and share there thoughts. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
+        "Feedz Up is a full-stack web platform built with Next.js, where users can remain anonymous and share there feedbacks. It features a custom sign-up process and uses NextAuth for secure authentication. Email verification is handled via NodeMailer.",
       githubLink: "https://github.com/tauhid-476/ama-next/tree/main",
       liveLink: "https://ama-next.vercel.app/",
     },
@@ -65,6 +66,13 @@ const Projects = () => {
       description: "Startup Hub is a full-stack platform built with Next.js, PostgreSQL, and NextAuth for authentication. It allows users to register as either candidates or founders, enabling seamless hiring and collaboration. The platform features automatic email notifications for hiring and acceptance updates. ImageKit is used for efficient image uploading, and the entire project is developed with TypeScript for a robust and scalable codebase. 🚀",
       githubLink: "https://github.com/tauhid-476/startup",
       liveLink: "https://startup-link-unvieled.vercel.app/",
+    },
+    {
+      projectIcon: introHaven,
+      title: "Intro Haven",
+      description:
+        "Intro Haven is a full-stack web app designed for introverts to share stories anonymously and connect with like-minded users. Built with Next.js, it allows users to read or post stories with a title, description, and optional image. Users can send friend requests and chat in real-time — this functionality was implemented using Stream SDK. Image uploads are handled via ImageKit, and all data is managed with a PostgreSQL database. The app focuses on privacy, self-expression, and meaningful connections.",
+      liveLink: "https://introvert-platform.vercel.app",
     },
     {
       projectIcon: socialSizer,
@@ -115,7 +123,7 @@ const Projects = () => {
           ~PROJECTS~
         </p>
       </motion.div>
-      
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -126,7 +134,7 @@ const Projects = () => {
         </p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-y-5"
         variants={containerVariants}
         initial="hidden"
@@ -139,8 +147,8 @@ const Projects = () => {
           </motion.div>
         ))}
       </motion.div>
-      
-      <motion.p 
+
+      <motion.p
         className='md:text-center md:text-3xl text-2xl'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -149,7 +157,7 @@ const Projects = () => {
       >
         More to come...
       </motion.p>
-      
+
       <FooterCard />
     </div>
   );

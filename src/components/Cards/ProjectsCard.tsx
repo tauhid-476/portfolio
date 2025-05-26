@@ -8,7 +8,7 @@ interface ProjectsProps {
   projectIcon: string | StaticImageData, // assuming it's a string URL for the image
   title: string,
   description: string,
-  githubLink: string,
+  githubLink?: string,
   liveLink?: string
 }
 
@@ -30,9 +30,11 @@ const ProjectsCard = ({ projectIcon, title, description, githubLink, liveLink }:
 
         {/* Links */}
         <div className="flex space-x-4">
-          <Link href={githubLink} aria-label="GitHub" target="_blank">
-            <GitHubLogoIcon className="h-8 w-8 text-white hover:text-purple-500 transition-colors" />
-          </Link>
+          {githubLink && (
+            <Link href={githubLink} aria-label="GitHub Repository" target="_blank">
+              <GitHubLogoIcon className="h-8 w-8 text-white hover:text-purple-500 transition-colors" />
+            </Link>
+          )}
           {liveLink && (
             <Link href={liveLink} aria-label="Live Demo" target="_blank">
             <ArrowUpRight className="h-8 w-8 text-white hover:text-purple-500 transition-colors" />

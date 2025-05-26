@@ -53,12 +53,12 @@ export default function About() {
               👋
             </p>
             <p className="text-lg">
-              I&apos;m a second-year Computer Engineering student in Mumbai, Maharashtra and a self-taught developer. My interest in software engineering started when one of my friends introduced me to programming.
+              I&apos;m a third-year Computer Engineering student in Mumbai, Maharashtra and a self-taught developer. My interest in software engineering started when one of my friends introduced me to programming.
             </p>
             <p className="text-lg">
               I enjoy coding, learning new technologies, and building projects.
               <br />
-              (I use Windows btw😅). I&apos;m also looking to participate in hackathons and explore new opportunities to grow as a developer.
+              My choice of operating system is fedora. I&apos;m also looking to participate in hackathons and explore new opportunities to grow as a developer.
             </p>
           </div>
         </motion.div>
