@@ -25,14 +25,14 @@ const Home = () => {
       "title": "Score More",
       "description": "Score More is an AI-powered platform designed to help students excel in their semester exams. It utilizes Gemini AI to analyze uploaded PDFs, categorize questions based on repetition, and generate solutions for effective preparation. The platform is built with a sleek and modern UI using ShadCN, ensuring a seamless and intuitive user experience.",
       "githubLink": "https://github.com/your-github/Score-More",
-      "liveLink": "https://score-more.vercel.app/"
+      "liveLink": "https://score-more.tauhid.me/"
     },
     {
       projectIcon: xAnime,
       title: "X Anime",
       description: "A fun and engaging tool where you can discover what your favorite anime character thinks about you based on insights from your Twitter profile. Experience a blend of anime magic and social media!",
       githubLink: "https://github.com/tauhid-476/anime-tw",
-      liveLink: "https://x-anime-pink.vercel.app/",
+      liveLink: "https://anixlyzer.tauhid.me/",
     }
   ];
 
@@ -163,9 +163,6 @@ const Home = () => {
         viewport={{ once: true }}
         className="flex flex-col justify-center items-center mt-16"
       >
-        <p className="text-2xl md:text-3xl">Liked the design ?</p>
-        <br />
-        <p className="text-xl">Inspired by <Link href="https://www.shivabhattacharjee.com/"><span className="text-purple-600 font-bold">@sh17va</span></Link></p>
       </motion.div>
 
       <FooterCard />
